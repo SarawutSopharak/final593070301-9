@@ -27076,17 +27076,17 @@ cr.behaviors.scrollto = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.LocalStorage,
 	cr.plugins_.Particles,
 	cr.plugins_.Mouse,
-	cr.plugins_.Spritefont2,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.TextBox,
 	cr.plugins_.SpriteFontPlus,
-	cr.plugins_.Text,
-	cr.plugins_.Sprite,
 	cr.plugins_.TiledBg,
-	cr.plugins_.video,
+	cr.plugins_.Sprite,
 	cr.plugins_.Touch,
+	cr.plugins_.video,
+	cr.plugins_.Text,
+	cr.plugins_.Spritefont2,
 	cr.behaviors.Sin,
 	cr.behaviors.Bullet,
 	cr.behaviors.DragnDrop,
@@ -27164,5 +27164,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Count,
 	cr.plugins_.Sprite.prototype.acts.SetVisible,
 	cr.behaviors.Sin.prototype.acts.SetActive,
-	cr.system_object.prototype.acts.NextPrevLayout
+	cr.system_object.prototype.acts.NextPrevLayout,
+	cr.plugins_.Browser.prototype.acts.GoToURL
 ];};
